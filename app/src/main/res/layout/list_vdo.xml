@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp"
+    android:background="@color/teal_200"
+    android:elevation="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_gray">
+        <ImageView
+            android:id="@+id/ImageThumb"
+            android:layout_width="match_parent"
+            android:layout_margin="3dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/lnr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/ImageThumb"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:singleLine="true"
+                android:text="video Title"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:singleLine="true"
+                android:text="video description"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/ImageThumb"
+            android:layout_alignBottom="@id/ImageThumb"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_delete_forever_24"/>
+
+
+        <ImageButton
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/ImageThumb"
+            android:layout_alignBottom="@id/ImageThumb"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_favorite_border_24"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

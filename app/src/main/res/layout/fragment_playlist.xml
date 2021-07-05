@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PlaylistFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/gray"
+        android:id="@+id/ply_recycler" />
+    <TextView
+        android:id="@+id/ply_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="List"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+</FrameLayout>
